@@ -22,12 +22,12 @@
 
 import pyautogui
 import time
-
+# add your requied text here in comments
 comments = ["be","ready","and","you","must","do","this","after","completing","100","comments","and","post","a","screenshot","in","this","post","okay","."]
-
+# provides 5 seconds of time to select a post in which to comment after running the script
 time.sleep(5)
 
-for i in range(100):
-    pyautogui.typewrite(comments[i%20])
+for i in range(100):#(100 is the number of comments  to be done! change according as your desire.
+    pyautogui.typewrite(comments[i%20])# 20 is the number of texts in the comment above, change accordingly how many texts do you have.
     pyautogui.typewrite("\n")
-    time.sleep(2)
+    time.sleep(2)# sleeps for 2 seconds before commenting next comment
